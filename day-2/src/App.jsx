@@ -17,8 +17,8 @@ function App() {
         </p>
         <p>{count}</p>
         </div>
-        <input type="text" className='text-black' placeholder='enter the 1st value' value={firstval} onChange={(e)=>setfirstval(e.target.value)}/>
-        <input type="text" className='text-black' placeholder='enter the 2nd value ' value={secondval} onChange={(e)=>setsecondval(e.target.value)}/>
+        <input type="text" className='text-black m-5 border-black rounded-xl px-4' placeholder='enter the 1st value' value={firstval} onChange={(e)=>setfirstval(e.target.value)}/>
+        <input type="text" className='text-black m-5 border-black rounded-xl px-4' placeholder='enter the 2nd value ' value={secondval} onChange={(e)=>setsecondval(e.target.value)}/>
         <p>First Number : {firstval}</p>
         <p>Second Number : {secondval}</p>
       <div className='flex flex-row gap-5 mt-7 items-center'>
