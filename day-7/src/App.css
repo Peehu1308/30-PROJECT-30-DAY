@@ -1,0 +1,10 @@
+:root{
+  background: #ffff;
+  color: black;
+
+}
+
+[dark-theme='dark']{
+  background-color: black;
+  color: aliceblue;
+}
