@@ -55,22 +55,28 @@ const Game = () => {
     }
 
   return (
-    <div className=' border border-2 border-white p-4 rounded-xl mx-auto text-white'>
-        <div className='grid grid-cols-3 grid-rows-3 gap-1 divide-x divide-y border-white'>
+    <div>
+        <p className='text-white text-center text-5xl mt-5'>TIC-TAC-TOE</p>
+        <p className='text-white text-center text-md'>(culinary style)</p>
+        <div className=' border border-2 border-white p-4 rounded-xl mx-auto text-white'>
+        <div className='grid grid-cols-3 grid-rows-3 gap-1 divide-x divide-y border-white bg-gradient-to-r from-blue-950 to-blue-900'>
     {board.map((value, index) => (
         <Block key={index} selected={value} onClick={() => handleClick(index)} />
     ))}
 
-    {winner && (
+    <div className='flex gap-6 '>
+        {winner && (
   <p className="mt-4 text-xl font-bold text-green-400">
     {winner === "tic" ? "❌ wins!" : "⭕ wins!"}
   </p>
 )}
 
-<button className='text-white' onClick={reset}>Reset</button>
+<button className='text-white border border-3 border-white p-4 rounded-xl' onClick={reset}>Reset</button>
+    </div>
 
 </div>
 
+    </div>
     </div>
   )
 }
